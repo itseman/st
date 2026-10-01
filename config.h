@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Ioskeley Mono:pixelsize=14:antialias=true:autohint=true:weight=bold";
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -201,9 +201,12 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
+	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.f = -0.1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.f = -0.1} },
-};
+ };
 
 /*
  * Special keys (change & recompile st.info accordingly)
